@@ -1,5 +1,6 @@
 # argstrat
 Strategic Argumentation for Persuasion
+======================================
 
 To generate an optimal simple stratgy, run the python script *argstrat.py* with a single argument naming the example problem file. For example, 
 
