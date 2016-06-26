@@ -83,7 +83,7 @@ success_rate = {'planner': 0, 'naive':0}
 domain_file = "./PDDLgen/domain.pddl"
 print "Running planner...",
 sys.stdout.flush()
-results = getStrategy(domain_file, problem_file, show_output=False)
+results = getStrategy(domain_file, problem_file, show_output=True)
 
 #print results
 winning_strategy['planner'] = Simple(AF,results[0])

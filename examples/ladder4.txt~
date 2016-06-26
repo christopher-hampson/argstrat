@@ -19,9 +19,7 @@ Attacks:
 Proponent: a, b1, c1, b3, c3, 
 
 Opponent: 
-    ({c0,b2,c2} : 1),
-    ({b0,b2,c2} : 1)
-
+    ({b0,c0,b2,c2} : 1)
 
 Goals: a
 

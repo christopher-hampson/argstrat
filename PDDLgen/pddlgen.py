@@ -13,7 +13,7 @@ def generatePDDL(filename, AF,  Prop, model): # Generates the PDDL specificatati
 		f.write("    (:domain StrategicArgumentation)\n")
 
 		## Objects
-		f.write("    (:objects {0} - arg\n".format(str(AF.getArgs()).translate(None,",[]'")))
+		f.write("    (:objects {0} - arg\n".format(str(list(Prop.getArgs())).translate(None,",[]'")))
 
 		# Objects (proponent sets)
 		f.write("              ")
