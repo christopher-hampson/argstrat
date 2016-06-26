@@ -13,7 +13,7 @@ import sys
 if len(sys.argv) > 1:
 	example_file = sys.argv[1]
 else:
-	raise Exception("Input filename not supplied. See README.txt for more informtaion.")
+	raise Exception("Input filename not supplied. See README.md for more informtaion.")
 
 if not example_file[-3:] == "txt":
 	raise Exception("Incorrect input type. File must be of type .txt")
