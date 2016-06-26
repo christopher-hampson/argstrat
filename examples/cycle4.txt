@@ -1,0 +1,30 @@
+Title: 4-prism
+
+Arguments: a, b0, b1, b2, b3, c0, c1, c2, c3
+
+Attacks: 
+    (b0,a), 
+    (b1,a),
+    (b2,a),
+    (b3,a),
+    (c0,b0),
+    (c1,b1),
+    (c2,b2),
+    (c3,b3),
+    (b0,b1),
+    (b1,b2),
+    (b2,b3),
+    (b3,b0),
+    (c0,c1),
+    (c1,c2),
+    (c2,c3),
+    (c3,c0)
+
+Proponent: a, c0, c1, c2, c3
+
+Opponent: 
+    ({b0,b1,b2,b3} : 1)
+
+Goals: a
+
+

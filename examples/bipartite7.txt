@@ -1,0 +1,19 @@
+Title: bipartite07
+
+Arguments: a, b, c, f, g, h, i
+
+Attacks: 
+    (f,a),
+    (g,a),
+    (b,f),
+    (h,b),
+    (c,g),
+    (i,c),
+
+Proponent: a, b, c
+
+Opponent: 
+    ({f, g, h, i} : 100)
+
+Goals: a
+

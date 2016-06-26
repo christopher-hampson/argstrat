@@ -1,0 +1,32 @@
+Title: cyclic6
+
+Arguments: a, b0, b1, b2, b3, b4, b5, c0, c1, c2, c3, c4, c5
+
+Attacks: 
+    (b0,a), 
+    (b1,a),
+    (b2,a),
+    (b3,a),
+    (b4,a),
+    (b5,a),
+    (c0,b0),
+    (c1,b1),
+    (c2,b2),
+    (c3,b3),
+    (c4,b4),
+    (c5,b5),
+    (c0,c1),
+    (c1,c2),
+    (c2,c3),
+    (c3,c4),
+    (c4,c5),
+    (c5,c0)
+
+Proponent: a, c0, c1, c2, c3, c4, c5
+
+Opponent: 
+    ({b0,b1,b2,b3,b4,b5} : 1)
+
+Goals: a
+
+

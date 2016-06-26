@@ -1,0 +1,29 @@
+Title: cyclic5
+
+Arguments: a, b0, b1, b2, b3, b4, c0, c1, c2, c3, c4
+
+Attacks: 
+    (b0,a), 
+    (b1,a),
+    (b2,a),
+    (b3,a),
+    (b4,a),
+    (c0,b0),
+    (c1,b1),
+    (c2,b2),
+    (c3,b3),
+    (c4,b4),
+    (c0,c1),
+    (c1,c2),
+    (c2,c3),
+    (c3,c4),
+    (c4,c0)
+
+Proponent: a, c0, c1, c2, c3, c4
+
+Opponent: 
+    ({b0,b1,b2,b3,b4} : 1)
+
+Goals: a
+
+

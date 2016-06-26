@@ -1,0 +1,23 @@
+Title: ECAI_example
+
+Arguments: a, b, c, d, e, f
+
+Attacks: 
+    (b,a), 
+    (c,a),
+    (d,b),
+    (f,c),
+    (e,d)
+
+Proponent: a, d, f
+
+Opponent: 
+    ({b} : 40),
+    ({c} : 50),
+    ({b,c} : 10),
+
+Rules: (f => e)
+
+
+Goals: a
+

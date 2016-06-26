@@ -1,0 +1,22 @@
+Title: dvorak_example
+
+Arguments: a, b, c, d, e, f, g, h
+
+Attacks: 
+    (b,a),
+    (c,b),
+    (c,d),
+    (d,c),
+    (d,e),
+    (f,e),
+    (g,f),
+    (e,g),
+    (h,d)
+
+Proponent: a, c, e, g, h
+
+Opponent: 
+    ({b, d, f} : 1)
+
+Goals: a, e
+
