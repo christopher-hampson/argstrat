@@ -9,7 +9,7 @@ def generatePDDL(filename, AF,  Prop, model): # Generates the PDDL specificatati
 	with open(filename,"w") as f:
 
 		## Domain
-		f.write("(define (problem temp)\n")
+		f.write("(define (problem {0})\n".format(AF.getName()))
 		f.write("    (:domain StrategicArgumentation)\n")
 
 		## Objects

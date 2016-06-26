@@ -13,16 +13,9 @@ def getStrategy(domain_file, problem_file, planner_path="./rewrite-clp", show_ou
 	plan_out = proc.communicate()[0]
 	end = time.time()
 
-	
 	# Process output of planner
 	strategy, move, metric = [], set(), 0
 	reported_time = 0
-
-	# write to backup
-	with open('backup_plan.txt','a') as f:
-		for line in plan_out.split("\n"):
-			f.write(line + "\n")
-
 
 	# Get strategy and metric
 	for line in plan_out.split("\n"):

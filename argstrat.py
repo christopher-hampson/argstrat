@@ -3,30 +3,30 @@ from ArgStrat.framework import *	# defined AF classes and semantics
 from ArgStrat.agent_models import *	# defined opponent model
 from ArgStrat.powerset import powerset
 from ArgStrat.argplanning import getStrategy	# parses output
-
 from PDDLgen.pddlgen import *	# generates pddl files
 from ArgStrat.naive import *	# naive algorithm
 
 import sys
 
 
-# Default files and directories
-example_dir = "./examples/"
-output_file = "./results_new.csv"
-
-
 # Set example file
-example_file = "ECAI-example.txt"
-example_file = raw_input("Please enter problem file: ") or example_file
+if len(sys.argv) > 1:
+	example_file = sys.argv[1]
+else:
+	raise Exception("Input filename not supplied. See README.txt for more informtaion.")
+
+if not example_file[-3:] == "txt":
+	raise Exception("Incorrect input type. File must be of type .txt")
+
 try:
-	f = open(example_dir + example_file)
+	f = open(example_file)
 except:
-	print "Error! File not found."
+	raise IOError("File {0} not found.".format(example_file))
 	quit()
 
-# Parse input 
 
-print "Parsing input file...",
+# Parse input 
+print "Parsing input...",
 sys.stdout.flush()
 p = Parser(f.read())
 p.parse()
@@ -65,15 +65,13 @@ for (K,p) in p.getOpponentModel():
 	Ag = Agent(K,mu)
 	opponent_model.add_model(Ag,p)
 
-print opponent_model
-
 
 # Generate PDDL
-problem_file = example_dir + example_file[:-3] + "pddl"
+problem_file = example_file[:-3] + "pddl"
 print "Generating PDDL...",
 sys.stdout.flush()
 generatePDDL(problem_file, AF, Prop, opponent_model)
-print "done"
+print "done\n"
 
 
 
@@ -85,13 +83,13 @@ success_rate = {'planner': 0, 'naive':0}
 domain_file = "./PDDLgen/domain.pddl"
 print "Running planner...",
 sys.stdout.flush()
-results = getStrategy(domain_file, problem_file, show_output=True)
+results = getStrategy(domain_file, problem_file, show_output=False)
 
 #print results
 winning_strategy['planner'] = Simple(AF,results[0])
 success_rate['planner'] = results[1]
 search_time['planner'] = results[2]
-print "done\n"
+print "done"
 
 
 # Run naive search

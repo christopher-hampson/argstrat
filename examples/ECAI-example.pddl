@@ -1,4 +1,4 @@
-(define (problem temp)
+(define (problem ECAI_example)
     (:domain StrategicArgumentation)
     (:objects a b c d e f - arg
               S0 S1 S8 S32 S9 S33 S40 S41 - setOfArgsP
