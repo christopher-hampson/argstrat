@@ -14,4 +14,4 @@ The probability of success of both stratgies is reported, together with the sear
 
 For more information, please see our short paper published in the proceedings of the 22nd European Conference on Artifical Intelligence (ECAI'16).
 
-    http://ebooks.iospress.nl/ISBN/978-1-61499-672-9
+    http://ebooks.iospress.nl/volumearticle/45007
