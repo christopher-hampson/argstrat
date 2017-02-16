@@ -1,8 +1,5 @@
 import random
 import itertools
-#import networkx as nx
-import numpy as np
-import matplotlib.pyplot as plt
 from ArgStrat.powerset import powerset
 
 class ArgFrame:
@@ -17,48 +14,6 @@ class ArgFrame:
 
 	def __repr__(self):
 		return "< {" + str(self.Args)[1:-1] + "}, {" + str(self.Attacks)[1:-1] + "} >"
-
-	def draw(self):
-		G = nx.DiGraph()
-
-		G.add_nodes_from(self.Args)
-		G.add_edges_from(self.Attacks)
-
-		pos = nx.shell_layout(G)
-
-		size = 800		
-
-		# colour nodes according to grounded semantics
-		in_nodes = grounded(self).In
-		nx.draw_networkx_nodes(G,pos,nodelist=in_nodes,node_color='#32CD32',node_size=size,alpha=1)
-
-		out_nodes = grounded(self).Out
-		nx.draw_networkx_nodes(G,pos,nodelist=out_nodes,node_color='#FF4500',node_size=size,alpha=1)
-
-		undec_nodes = grounded(self).Undec
-		nx.draw_networkx_nodes(G,pos,nodelist=undec_nodes,node_color='#4169E1',node_size=size,alpha=1)
-
-		#nx.draw_networkx_nodes(G,pos,nodelist=[self.topic],node_color='#ffff00',node_size=size+100,alpha=1)
-
-		# draw edges
-		nx.draw_networkx_edges(G,pos,width=1.0,alpha=1)
-
-
-		# draw labels
-		labels = {}
-
-		for a in self.Args:
-			labels[a] = r'$' + str(a) + '$'
-
-		labels[self.topic] = r'$T$'
-
-		nx.draw_networkx_labels(G,pos,labels,font_size=16)
-
-
-		#plt.axis('off')
-
-		# display graph
-		plt.show()
 
 	def getArgs(self):
 		return self.Args
