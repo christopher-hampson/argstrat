@@ -106,7 +106,7 @@ class OpponentModel:
 
 
 	def getModels(self):
-		return [Opp for Opp in self.model]
+		return sorted(self.model.keys())
 
 	def __len__(self):
 		return self.model_size
