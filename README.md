@@ -15,3 +15,16 @@ The probability of success of both stratgies is reported, together with the sear
 For more information, please see our short paper published in the proceedings of the 22nd European Conference on Artifical Intelligence (ECAI'16).
 
     http://ebooks.iospress.nl/volumearticle/45007
+
+
+Copyright (C) 2016 Christopher Hampson
+ 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details: http://www.gnu.org/licenses
