@@ -1,11 +1,11 @@
 Simple Optimal Strategies for Persuasion
 ======================================
 
-To generate an optimal simple stratgy, run the python script *argstrat.py* with a single argument naming the example problem file. For example, 
+To generate an optimal simple stratgy, run the python script *argstrat.py* with a two arguments naming the path to your chosen planner and the path to your chosen example problem file. For example, 
 
-    python argstrat.py ./examples/ECAI-example.txt
+    python argstrat.py ./planner ./examples/ECAI-example.txt
   
-The script will generate the PDDL file *./examples/ECAI-example.pddl* and run the supplied implementation of the POPF planner automatically, returning an optimal simple strategy (should one exist).
+The script will generate the PDDL file *./examples/ECAI-example.pddl* and run the planner automatically, returning an optimal simple strategy (should one exist).
 
 The script also performs the naive search fon the same example problem, and returns a second (possible different) optimal simple stratgy.
 
