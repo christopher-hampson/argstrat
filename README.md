@@ -5,7 +5,7 @@ This work is described in the following paper:
  
     Black, E., Coles, A. J. & Hampson, C. S. Planning for persuasion. To appear in AAMAS '17 The 16th International Conference on Autonomous Agents and Multiagent Systems. 2017.
  
-The domain file (which describes the actions) is "domain.pddl", in the "PDDLgen" folder. The files that describe the examples used for evaluation of the approach described in the Planning for Persuasion paper are in the "examples" folder.
+The domain file (which describes the actions) is *"domain.pddl"*, located in the *"PDDLgen"* folder. The files that describe the examples used for evaluation of the approach described in the Planning for Persuasion paper are in the "examples" folder.
  
 We also include here the script we used to evaluate our approach. In order to run this, one needs to supply it with an automated planner. If you are interested in accessing the planner we used, please contact Amanda Coles (amander dot coles at kcl.ac.uk).
 
