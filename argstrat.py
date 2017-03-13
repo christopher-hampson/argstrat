@@ -10,10 +10,11 @@ import sys
 
 
 # Set example file
-if len(sys.argv) > 1:
-	example_file = sys.argv[1]
+if len(sys.argv) > 2:
+	domain_file = sys.argv[1]
+	example_file = sys.argv[2]
 else:
-	raise Exception("Input filename not supplied. See README.md for more informtaion.")
+	raise Exception("Planner or input filename not supplied. See README.md for more informtaion.")
 
 if not example_file[-3:] == "txt":
 	raise Exception("Incorrect input type. File must be of type .txt")
@@ -80,7 +81,6 @@ search_time = {'planner': 0, 'naive':0}
 success_rate = {'planner': 0, 'naive':0}
 
 # Run planner
-domain_file = "./PDDLgen/domain.pddl"
 print "Running planner...",
 sys.stdout.flush()
 results = getStrategy(domain_file, problem_file, show_output=True)
