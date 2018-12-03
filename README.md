@@ -7,7 +7,7 @@ This work is described in the following paper:
  
 The domain file (which describes the actions) is *"domain.pddl"*, located in the *"PDDLgen"* folder. The files that describe the examples used for evaluation of the approach described in the Planning for Persuasion paper are in the "examples" folder.
  
-We also include here the script we used to evaluate our approach. In order to run this, one needs to supply it with an automated planner. If you are interested in accessing the planner we used, please contact Amanda Coles (amander dot coles at kcl.ac.uk).
+We also include here the script we used to evaluate our approach. In order to run this, one needs to supply it with an automated planner. If you are interested in accessing the planner we used, please contact Amanda Coles (amanda dot coles at kcl.ac.uk).
 
 Once you have supplied the implementation with a planner, to generate an optimal simple strategy run the python script *argstrat.py* with a two arguments naming the path to your chosen planner and the path to your chosen example problem file. For example, 
 
