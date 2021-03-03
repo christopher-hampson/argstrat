@@ -74,7 +74,7 @@ class ArgFrame:
 	def get_attacked_by(self,a):
 		attacked_by = []
 		for b in self.Args:
-			if attacks(b,a):
+			if self.attacks(b,a):
 				attacked_by.append(b)
 		return attacked_by
 
